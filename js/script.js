@@ -68,6 +68,7 @@ function pageInit(){
     $body.on('click', '.products-description-wrap .item .close', function(e){
         e.preventDefault();
         $(this).parent('.item').slideUp('fast');
+        $('.list-of-products-wrap .item').removeClass('selected');
     });
 
     //Form---------------------------------------------------
