@@ -880,6 +880,8 @@ p.select-poly{
 
 .form-item .fake-select span.black{opacity:1;}
 
+.popup-form-wrap .form-item .fake-select{background-color:#fff;}
+
 .form-item select{
   opacity:0;
   margin:0;
