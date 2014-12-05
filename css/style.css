@@ -181,6 +181,7 @@ body{
   min-width:1200px;
   overflow:hidden;
   clear:both;
+  background-color:#fff;
 }
 
 #content{
