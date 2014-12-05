@@ -457,8 +457,8 @@ p.select-poly{
   right:34px;
   top:0;
   background:transparent url('../img/value-1.png') no-repeat 0 0;
-  -webkit-animation-delay:.25s;
-  animation-delay:.25s;
+  -webkit-animation-delay:.3s;
+  animation-delay:.3s;
 }
 
 .value-skills-image .item-2{
@@ -468,8 +468,8 @@ p.select-poly{
   right:0;
   top:122px;
   background:transparent url('../img/value-2.png') no-repeat 0 0;
-  -webkit-animation-delay:.5s;
-  animation-delay:.5s;
+  -webkit-animation-delay:.6s;
+  animation-delay:.6s;
 }
 
 .value-skills-image .item-3{
@@ -479,8 +479,8 @@ p.select-poly{
   right:34px;
   bottom:0;
   background:transparent url('../img/value-3.png') no-repeat 0 0;
-  -webkit-animation-delay:.75s;
-  animation-delay:.75s;
+  -webkit-animation-delay:.9s;
+  animation-delay:.9s;
 }
 
 .value-skills-image .item-4{
@@ -490,8 +490,8 @@ p.select-poly{
   left:34px;
   top:0;
   background:transparent url('../img/value-6.png') no-repeat 0 0;
-  -webkit-animation-delay:1.5s;
-  animation-delay:1.5s;
+  -webkit-animation-delay:1.8s;
+  animation-delay:1.8s;
 }
 
 .value-skills-image .item-5{
@@ -501,8 +501,8 @@ p.select-poly{
   left:0;
   top:122px;
   background:transparent url('../img/value-5.png') no-repeat 0 0;
-  -webkit-animation-delay:1.25s;
-  animation-delay:1.25s;
+  -webkit-animation-delay:1.5s;
+  animation-delay:1.5s;
 }
 
 .value-skills-image .item-6{
@@ -512,8 +512,8 @@ p.select-poly{
   left:34px;
   bottom:0;
   background:transparent url('../img/value-4.png') no-repeat 0 0;
-  -webkit-animation-delay:1s;
-  animation-delay:1s;
+  -webkit-animation-delay:1.2s;
+  animation-delay:1.2s;
 }
 
 .current .value-skills-image .item{
