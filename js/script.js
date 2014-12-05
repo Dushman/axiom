@@ -55,13 +55,13 @@ function pageInit(){
     $body.on('click', '.list-of-products-wrap .item', function(){
         var $index = $(this).index();
         var $topBlock = $('.products-description-wrap').offset();
-        $('.products-description-wrap .item').eq($index).slideDown().siblings().hide();
+        $('.products-description-wrap .item').eq($index).slideDown('fast').siblings().hide();
         $page.animate({scrollTop: $topBlock.top - 620}, 'slow', 'swing');
     });
 
     $body.on('click', '.products-description-wrap .item .close', function(e){
         e.preventDefault();
-        $(this).parent('.item').slideUp();
+        $(this).parent('.item').slideUp('fast');
     });
 
     //Form---------------------------------------------------
