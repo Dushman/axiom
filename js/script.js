@@ -44,21 +44,21 @@ function pageInit(){
 
     //Form---------------------------------------------------
 
-    $('input[data-name="name"]').on('input', function() {
+    $('#name').on('input', function() {
         var input = $(this);
         var is_name = input.val();
         if (is_name) {input.removeClass('error').addClass('valid');}
         else {input.removeClass('valid').addClass('error');}
     });
 
-    $('#order-last-name').on('input', function() {
+    $('#type').on('input', function() {
         var input = $(this);
         var is_name = input.val();
         if (is_name) {input.removeClass('error').addClass('valid');}
         else {input.removeClass('valid').addClass('error');}
     });
 
-    $('#order-phone').on('input', function() {
+    $('#phone').on('input', function() {
         var input = $(this);
         var re = /^[0-9\-\+]{8,15}$/;
         var is_phone = re.test(input.val());
@@ -66,7 +66,7 @@ function pageInit(){
         else {input.removeClass('valid').addClass('error');}
     });
 
-    $('#order-email').on('input', function() {
+    $('#email').on('input', function() {
         var input = $(this);
         var re = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
         var is_email = re.test(input.val());
@@ -74,7 +74,7 @@ function pageInit(){
         else {input.removeClass('valid').addClass('error');}
     });
             
-    $('#order-message').keyup(function(event) {
+    $('#message').keyup(function(event) {
         var input = $(this);
         var message = $(this).val();
         if (message) {input.removeClass('error').addClass('valid');}
