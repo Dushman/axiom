@@ -44,7 +44,7 @@ function pageInit(){
 
     //Form---------------------------------------------------
 
-    $('input')attr('data-name').on('input', function() {
+    $('input[data-name="name"]').on('input', function() {
         var input = $(this);
         var is_name = input.val();
         if (is_name) {input.removeClass('error').addClass('valid');}

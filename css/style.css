@@ -704,8 +704,8 @@ p.select-poly{
 #main-form-wrap form .form-item input.error, 
 #main-form-wrap form .form-item textarea.error{border-color:#96050a;}
 
-#main-form-wrap form .form-item input.success, 
-#main-form-wrap form .form-item textarea.success{border-color:#205511;}
+#main-form-wrap form .form-item input.valid, 
+#main-form-wrap form .form-item textarea.valid{border-color:#205511;}
 
 #main-form-wrap .btn-wrap{padding-top:10px;}
 
