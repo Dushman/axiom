@@ -642,7 +642,102 @@ p.select-poly{
   position:relative;
   overflow:hidden;
   clear:both;
-  padding:70px 0 55px 0;
+  padding:70px 0 55px 45px;
+}
+
+.list-of-products-wrap .item{
+  position:relative;
+  float:left;
+  width:270px;
+  height:220px;
+  cursor:pointer;
+  margin-left:10px;
+  -webkit-animation-duration: 1s; 
+  animation-duration: 1s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+  -webkit-animation-timing-function: ease-in-out; 
+  animation-timing-function: ease-in-out; 
+} 
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.current .list-of-products-wrap .item{ 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+
+.list-of-products-wrap .item:first-child{margin-left:0;}
+
+.list-of-products-wrap .item-1{
+  background:transparent url('../img/product-1.jpg') no-repeat 0 0;
+  -webkit-animation-delay:.25s;
+  animation-delay:.25s;
+}
+
+.list-of-products-wrap .item-2{
+  background:transparent url('../img/product-2.jpg') no-repeat 0 0;
+  -webkit-animation-delay:.5s;
+  animation-delay:.5s;
+}
+
+.list-of-products-wrap .item-3{
+  background:transparent url('../img/product-3.jpg') no-repeat 0 0;
+  -webkit-animation-delay:.75s;
+  animation-delay:.75s;
+}
+
+.list-of-products-wrap .item-4{
+  background:transparent url('../img/product-4.jpg') no-repeat 0 0;
+  -webkit-animation-delay:1s;
+  animation-delay:1s;
+}
+
+.list-of-products-wrap .item .product-title{
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  line-height:220px;
+  text-align:center;
+  background:rgba(13,101,143,.9);
+  opacity:0;
+  -webkit-transition:opacity 1s ease-in-out;
+  -moz-transition:opacity 1s ease-in-out;
+  transition:opacity 1s ease-in-out;
+}
+
+.list-of-products-wrap .item:hover .product-title{opacity:1;}
+
+.list-of-products-wrap .item .product-title span{
+  color:#fff;
+  text-transform:uppercase;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+  font-size:20px;
+  line-height:20px;
+  padding:8px 0;
+  font-weight:200;
 }
 
 /*-------------- Order --------------*/
