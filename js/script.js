@@ -7,7 +7,7 @@ function pageInit(){
     var $page = $('html,body'),
         $body = $('body');
 
-    $body.bsScrollSpy;
+    $('body').scrollspy();
 
     function scrollToPage(target) {
         var y = 0;
