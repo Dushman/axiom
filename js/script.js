@@ -49,11 +49,17 @@ function pageInit(){
 
     $body.on('click', '.popup-btn', function(e){
         e.preventDefault();
-        $('#popup-form').addClass('visible');
+        $('#popup-form').removeClass().addClass('visible');
+    });
+
+    $body.on('click', '.close-popup-btn', function(e){
+        e.preventDefault();
+        $(this).parents('#popup-form').addClass('not-visible');
     });
 
     $body.on('click', '.list-of-products-wrap .item', function(){
         var $index = $(this).index();
+        $(this).addClass('selected').siblings().removeClass('selected');
         var $topBlock = $('.products-description-wrap').offset();
         $('.products-description-wrap .item').eq($index).slideDown('fast').siblings().hide();
         $page.animate({scrollTop: $topBlock.top - 620}, 'slow', 'swing');
@@ -67,13 +73,6 @@ function pageInit(){
     //Form---------------------------------------------------
 
     $('#order-name').on('input', function() {
-        var input = $(this);
-        var is_name = input.val();
-        if (is_name) {input.removeClass('error').addClass('valid');}
-        else {input.removeClass('valid').addClass('error');}
-    });
-
-    $('#order-type').on('input', function() {
         var input = $(this);
         var is_name = input.val();
         if (is_name) {input.removeClass('error').addClass('valid');}
@@ -174,5 +173,11 @@ function pageInit(){
             e.preventDefault(); 
             $('.success-block').fadeIn('slow');
         }
+    });
+
+    $('.form-item select').on('change', function(){
+        var text = $(this).find('option:selected').text();
+        $(this).parent().find('.fake-select span').text(text).addClass('black');
+        $(this).parent().find('.fake-select').addClass('valid');
     });		
 }
