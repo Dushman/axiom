@@ -61,7 +61,7 @@ function pageInit(){
 
     $body.on('click', '.products-description-wrap .item .close', function(e){
         e.preventDefault();
-        $(this).parent('.item').fadeOut();
+        $(this).parent('.item').slideUp('slow');
     });
 
     //Form---------------------------------------------------
