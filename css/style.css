@@ -1079,7 +1079,7 @@ p.copyright{
   transition:border-color .6s ease-in-out;
 }
 
-.popup-form-wrap form .form-item textarea{height:155px;}
+.popup-form-wrap form .form-item textarea{height:135px;}
 
 .popup-form-wrap form .form-item input.error, 
 .popup-form-wrap form .form-item textarea.error{border-color:#96050a;}
