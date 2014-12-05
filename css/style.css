@@ -820,6 +820,8 @@ p.select-poly{
 
 /*-------------- Order --------------*/
 
+#order{background-color:#f8f8f8;}
+
 #order .section-inn{padding:60px 0;}
 
 .form-info{
@@ -868,7 +870,7 @@ p.select-poly{
   margin:0;
   padding:5px 25px;
   width:100%;
-  background:#fff url('../img/arrow.png') no-repeat 9px 10px;
+  background:#f8f8f8 url('../img/arrow.png') no-repeat 9px 10px;
   -webkit-transition:border-color .6s ease-in-out;
   -moz-transition:border-color .6s ease-in-out;
   transition:border-color .6s ease-in-out;
@@ -899,7 +901,7 @@ p.select-poly{
   margin:0;
   padding:5px 25px;
   width:100%;
-  background:#fff url('../img/arrow.png') no-repeat 9px 10px;
+  background:#f8f8f8 url('../img/arrow.png') no-repeat 9px 10px;
   -webkit-transition:border-color .6s ease-in-out;
   -moz-transition:border-color .6s ease-in-out;
   transition:border-color .6s ease-in-out;
