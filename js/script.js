@@ -32,6 +32,11 @@ function pageInit(){
         else {$('.top-menu').removeClass('fixed');}   
     });
 
+    var $top = $(document).scrollTop();
+
+    if ($top > 350) {$('.top-menu').addClass('fixed');}
+    else {$('.top-menu').removeClass('fixed');} 
+
     $('#wrapper .section').scrollSpy();
 
 	$('#wrapper .section').on('scrollSpy:enter', function(){
