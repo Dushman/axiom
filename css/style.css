@@ -470,6 +470,8 @@ p.select-poly{
 
 .value-skills-wrap > ul.f-right li{text-align:right;}
 
+.value-skills-wrap > ul.f-right li.plc{padding:70px 0;}
+
 .value-skills-image{
   overflow:hidden;
   position:relative;
