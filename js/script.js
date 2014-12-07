@@ -57,17 +57,17 @@ function pageInit(){
         $(this).parents('#popup-form').addClass('not-visible');
     });
 
-    $body.on('click', '.list-of-products-wrap .item', function(){
+    $body.on('click', '.products-row-block .list-of-products-wrap .item', function(){
         var $index = $(this).index();
         $(this).addClass('selected').siblings().removeClass('selected');
-        var $topBlock = $('.products-description-wrap').offset();
-        $('.products-description-wrap .item').eq($index).slideDown('fast').siblings().hide();
-        $page.animate({scrollTop: $topBlock.top - 620}, 'slow', 'swing');
+        var $topBlock = $(this).parents('.products-row-block').find('.products-description-wrap').offset();
+        $(this).parents('.products-row-block').find('.products-description-wrap .item').eq($index).fadeIn('slow').siblings().hide();
+        $page.animate({scrollTop: $topBlock.top - 340}, 'slow', 'swing');
     });
 
     $body.on('click', '.products-description-wrap .item .close', function(e){
         e.preventDefault();
-        $(this).parent('.item').slideUp('fast');
+        $(this).parent('.item').fadeOut('slow');
         $('.list-of-products-wrap .item').removeClass('selected');
     });
 

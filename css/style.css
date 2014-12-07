@@ -606,6 +606,28 @@ p.select-poly{
   line-height:25px;
 }
 
+.form-pdf-wrap{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:-200px;
+  width:200px;
+  padding:20px;
+  background-color:#fff;
+  -webkit-box-shadow:0 5px 10px rgba(0,0,0,.7);
+  -moz-box-shadow:0 5px 10px rgba(0,0,0,.7);
+  box-shadow:0 5px 10px rgba(0,0,0,.7);
+}
+
+a.pdf-link{
+  display:block;
+  text-indent:-9999px;
+  text-decoration:none;
+  background:transparent url('../img/pdf-bg.png') no-repeat 0 0;
+  width:px;
+  height:px;
+}
+
 /*--------------- Bird --------------*/
 
 .section-bird{
@@ -672,8 +694,10 @@ p.select-poly{
   position:relative;
   overflow:hidden;
   clear:both;
-  padding:70px 0 45px 45px;
+  padding:70px 0 0 45px;
 }
+
+.pt-0{padding-top:0;}
 
 .list-of-products-wrap .item{
   position:relative;
@@ -747,8 +771,13 @@ p.select-poly{
   background:transparent url('../img/product-4.jpg') no-repeat 0 0;
   -webkit-animation-delay:1.5s;
   animation-delay:1.5s;
-  margin-left:280px;
 }
+
+.list-of-products-wrap .item.ml-135{margin-left:280px;}
+
+.list-of-products-wrap .item.ml-280{margin-left:280px;}
+
+.list-of-products-wrap .item.ml-415{margin-left:415px;}
 
 .list-of-products-wrap .item-6{
   background:transparent url('../img/product-1.jpg') no-repeat 0 0;
@@ -789,14 +818,14 @@ p.select-poly{
   display:table;
   width:100%;
   clear:both;
+  padding:0 45px;
 }
 
 .products-description-wrap .item{
   position:relative;
   overflow:hidden;
   clear:both;
-  padding:30px 0;
-  margin-top:-45px;
+  padding:20px 0 60px 0;
   display:none;
 }
 
@@ -815,10 +844,18 @@ p.select-poly{
   background:transparent url('../img/close.png') no-repeat 0 0;
   cursor:pointer;
   position:absolute;
-  right:10px;
-  bottom:0;
+  right:20px;
+  bottom:25px;
   text-indent:-9999px;
 }
+
+.products-row-block{
+  position:relative;
+  overflow:hidden;
+  clear:both;
+}
+
+#produce .btn-wrap{padding-top:30px;}
 
 /*-------------- Order --------------*/
 
@@ -1059,6 +1096,8 @@ p.copyright{
   background-color:#fff;
   width:450px;
   display:none;
+  -webkit-box-shadow:0 5px 10px rgba(0,0,0,.7);
+  -moz-box-shadow:0 5px 10px rgba(0,0,0,.7);
   box-shadow:0 5px 10px rgba(0,0,0,.7);
   -webkit-animation-duration: 1s; 
   animation-duration: 1s; 
