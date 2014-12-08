@@ -611,22 +611,54 @@ p.select-poly{
   position:absolute;
   top:0;
   left:-200px;
-  width:200px;
-  padding:20px;
+  width:190px;
+  padding:110px 10px 20px 10px;
   background-color:#fff;
-  -webkit-box-shadow:0 5px 10px rgba(0,0,0,.7);
-  -moz-box-shadow:0 5px 10px rgba(0,0,0,.7);
-  box-shadow:0 5px 10px rgba(0,0,0,.7);
+  -webkit-box-shadow:0 1px 3px rgba(0,0,0,.7);
+  -moz-box-shadow:0 1px 3px rgba(0,0,0,.7);
+  box-shadow:0 1px 3px rgba(0,0,0,.7);
+  border:1px solid #e0e0e0;
+  background:#fff url('../img/pdf-form-bg.png') no-repeat 50% 30px;
 }
 
 a.pdf-link{
   display:block;
-  text-indent:-9999px;
+  color:#038a8b;
   text-decoration:none;
-  background:transparent url('../img/pdf-bg.png') no-repeat 0 0;
-  width:px;
-  height:px;
+  background:transparent url('../img/pdf-bg.png') no-repeat 50% 100%;
+  text-align:center;
+  font-size:15px;
+  line-height:20px;
+  font-weight:200;
+  padding-bottom:30px;
 }
+
+.form-pdf-wrap .form-item{
+  position:relative;
+  display:table;
+  width:100%;
+  padding-bottom:10px;
+}
+
+.mb-10{margin-bottom:10px;}
+
+.form-pdf-wrap .form-item input{
+  color:#000;
+  font:200 12px/20px 'Roboto', sans-serif;
+  border:1px solid #c8c1bd;
+  position:relative;
+  margin:0;
+  padding:5px 15px;
+  width:100%;
+  background-color:#fff:;
+  -webkit-transition:border-color .6s ease-in-out;
+  -moz-transition:border-color .6s ease-in-out;
+  transition:border-color .6s ease-in-out;
+}
+
+.form-pdf-wrap .form-item input.error{border-color:#96050a;}
+
+.form-pdf-wrap .form-item input.valid{border-color:#205511;}
 
 /*--------------- Bird --------------*/
 

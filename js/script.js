@@ -180,5 +180,36 @@ function pageInit(){
         var text = $(this).find('option:selected').text();
         $(this).parent().find('.fake-select span').text(text).addClass('black');
         $(this).parent().find('.fake-select').addClass('valid');
-    });		
+    });	
+
+    $('#pdf-name').on('input', function() {
+        var input = $(this);
+        var is_name = input.val();
+        if (is_name) {input.removeClass('error').addClass('valid');}
+        else {input.removeClass('valid').addClass('error');}
+    });
+
+    $('#pdf-email').on('input', function() {
+        var input = $(this);
+        var re = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+        var is_email = re.test(input.val());
+        if (is_email) {input.removeClass('error').addClass('valid');}
+        else {input.removeClass('valid').addClass('error');}
+    });
+        
+    $('.pdf-link').click(function(e){
+        var form_data = $('.form-pdf-wrap form').serializeArray();
+        var error_free = true;
+        for (var input in form_data){
+            var element = $('#pdf-' + form_data[input]['name']);
+            var valid = element.hasClass('valid');
+            if (!valid){element.addClass('error'); error_free = false;}
+            else {element.removeClass('error');}
+        }
+        if (!error_free){
+            e.preventDefault(); 
+        } else{
+            e.preventDefault(); 
+        }
+    });	
 }
